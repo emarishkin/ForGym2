@@ -1,10 +1,11 @@
+import { WorkGymAll } from "./components/WorkGym/WorkGymAll"
 
 function App() {
 
 
   return (
     <>
-      
+      <WorkGymAll />
     </>
   )
 }

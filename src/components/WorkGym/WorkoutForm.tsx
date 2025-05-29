@@ -22,7 +22,7 @@ export const WorkoutForm:FC<WorkoutFormProps> = ({onAdd}) => {
     const handleSubmit = (e:FormEvent) =>{
         e.preventDefault()
         const newEntry:WorkoutEntry = {
-           id:Date.now().toString(),
+           id: Date.now().toString(),
            user:form.user as 'Не выбрано' | 'Егор' | 'Сергей' | 'Роман' | 'Слава' | 'Руслан',
            date:form.date,
            exercise:form.exercise as 'Не выбрано' | 'Жим лежа' | 'Жим на наклонной скамье' | 'Штанга на бицепс' | 'Французкий жим' | 'Приседания' | 'Становая тяга' | 'Средняя дельта' | 'Бабочка(грудь)'| 'Подтягивания на турнике',
@@ -44,7 +44,7 @@ export const WorkoutForm:FC<WorkoutFormProps> = ({onAdd}) => {
                 <option value="Слава">Слава</option>
                 <option value="Руслан">Руслан</option>
             </select>
-            <input name="data" type="data" value={form.date} onChange={handleChange} />
+            <input name="date" type="date" value={form.date} onChange={handleChange} />
             <select name='exercise' value={form.exercise} onChange={handleChange}>
                 <option value="Не выбрано">Не выбрано</option>
                 <option value="Жим лежа">Жим лежа</option>
