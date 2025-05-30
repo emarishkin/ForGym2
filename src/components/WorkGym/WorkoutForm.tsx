@@ -1,5 +1,6 @@
 import { useState, type ChangeEvent, type FC, type FormEvent } from "react";
 import type { WorkoutEntry } from "../../types/workout";
+import '../WorkGym/WorkoutForm.css'
 
 interface WorkoutFormProps{
 onAdd: (entry: WorkoutEntry) => void;
